@@ -1,0 +1,186 @@
+<!DOCTYPE html>
+<html lang="zh-TW">
+    <head>
+        <meta charset="utf-8" />
+        <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover" />
+        <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+        <meta property="og:title" content="電影訂票" />
+        <meta property="og:description" content="選好位置後，到現場就能直接領票進場，整個過程相當快速且方便。" />
+        <meta property="og:locale" content="zh_TW" />
+        <meta property="og:type" content="website" />
+        <link rel="stylesheet" href="css/movie-tickets-booking.css" />
+        <title>電影訂票</title>
+    </head>
+    <body>
+        <body>
+            <section id="section">
+                <div class="container">
+                    <div class="left-container">
+                        <div class="left-main-container">
+                            <div class="legend-container">
+                                <ul>
+                                    <li>
+                                        <div class="seat legend"></div>
+                                        <small>可選</small>
+                                    </li>
+                                    <li>
+                                        <div class="seat legend selected"></div>
+                                        <small>您的座位</small>
+                                    </li>
+                                    <li>
+                                        <div class="seat legend occupied"></div>
+                                        <small>已售</small>
+                                    </li>
+                                </ul>
+                            </div>
+                            <div class="main-seat-container">
+                                <div class="screen">
+                                    <small>銀幕</small>
+                                </div>
+                                <div class="seat-container" id="seat-container">
+                                    <div class="seat-row-container-1 seat-row-container">
+                                        <div class="row">
+                                            <div class="seat"></div>
+                                            <div class="seat occupied"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="seat"></div>
+                                            <div class="seat occupied"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                        </div>
+                                    </div>
+                                    <div class="seat-row-container-2 seat-row-container">
+                                        <div class="row">
+                                            <div class="seat"></div>
+                                            <div class="seat occupied"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="seat"></div>
+                                            <div class="seat occupied"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="seat"></div>
+                                            <div class="seat occupied"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="seat"></div>
+                                            <div class="seat occupied"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                        </div>
+                                    </div>
+                                    <div class="seat-row-container-3 seat-row-container">
+                                        <div class="row">
+                                            <div class="seat"></div>
+                                            <div class="seat occupied"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                        </div>
+                                        <div class="row">
+                                            <div class="seat"></div>
+                                            <div class="seat occupied"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                            <div class="seat"></div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="right-container">
+                        <div class="confirm-container">
+                            <div class="right-top-container">
+                                <div class="movie-information">
+                                    <div class="select-movie">
+                                        <label>
+                                            <p>請選擇影片</p>
+                                            <select id="select-movie"></select>
+                                        </label>
+                                    </div>
+                                    <div class="movie-name">
+                                        <p>影片名稱</p>
+                                        <h1 id="movie-name">灌籃高手</h1>
+                                    </div>
+                                    <div class="movie-price">
+                                        <p>影片價格</p>
+                                        <h1 id="movie-price">$ 280</h1>
+                                    </div>
+                                    <div class="date-container">
+                                        <p>日期</p>
+                                        <p class="date-on">2023 年 01 月 31 日</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="right-bottom-container">
+                                <div class="selected-seat-container">
+                                    <p>選擇座位</p>
+                                    <div class="selected-seats-holder" id="selected-seats-holder">
+                                        <span class="no-selected">尚未選擇座位</span>
+                                    </div>
+                                </div>
+                                <div class="number-of-seats-container">
+                                    <div class="number-of-seat-element">
+                                        <p><span id="number-of-seat">0</span> 座位</p>
+                                    </div>
+                                    <div class="price-container">
+                                        <p id="total-price">$ 0</p>
+                                    </div>
+                                </div>
+                                <div class="button-container">
+                                    <div class="cancel-button">
+                                        <button id="cancel-button">取消</button>
+                                    </div>
+                                    <div class="proceed-button-element">
+                                        <button id="proceed-button">繼續</button>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+        </body>
+        <script src="js/movie-tickets-booking.js" defer></script>
+    </body>
+</html>
